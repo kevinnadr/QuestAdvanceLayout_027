@@ -41,3 +41,17 @@ val DarkBackground = Color(color = 0xFF1C1C1E)
 val CardBackground = Color(color = 0xFF2C2C2E)
 val TextGray = Color(color = 0xFF8E8E93)
 
+
+@Composable
+fun ProfileScreen(modifier: Modifier) {
+    Surface(
+        color = DarkBackground,
+        modifier = Modifier.fillMaxSize()
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(vertical = 24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+}
