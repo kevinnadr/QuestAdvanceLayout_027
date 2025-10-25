@@ -156,3 +156,15 @@ fun ProfileScreen(modifier: Modifier) {
                     )
                 }
             }
+
+            Spacer(modifier = Modifier.height(height = 24.dp))
+
+
+            Text(
+                text = stringResource(id = R.string.copyright),
+                color = TextGray,
+                fontSize = 12.sp
+            )
+        }
+    }
+}
