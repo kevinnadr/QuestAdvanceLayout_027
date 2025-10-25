@@ -127,4 +127,16 @@ fun ProfileScreen(modifier: Modifier) {
             }
 
             Spacer(modifier = Modifier.weight(weight = 1f))
-}
+
+
+            Button(
+                onClick = { },
+                shape = RoundedCornerShape(size = 25.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Red
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(height = 50.dp)
+                    .padding(horizontal = 24.dp)
+            )
