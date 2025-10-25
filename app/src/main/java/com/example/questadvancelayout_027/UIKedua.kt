@@ -90,4 +90,9 @@ fun ProfileScreen(modifier: Modifier) {
                 fontSize = 26.sp,
                 fontWeight = FontWeight.Bold
             )
-            }
+            Text(
+                text = stringResource(id = R.string.username),
+                color = TextGray,
+                fontSize = 16.sp
+            )
+           }
