@@ -103,4 +103,26 @@ fun ProfileScreen(modifier: Modifier) {
                 textAlign = TextAlign.Center,
                 modifier = Modifier.padding(horizontal = 24.dp)
             )
+
+            Spacer(modifier = Modifier.height(height = 32.dp))
+
+
+            Column(
+                verticalArrangement = Arrangement.spacedBy(space = 12.dp),
+                modifier = Modifier.padding(horizontal = 24.dp)
+            ) {
+                // Ini akan error sampai Anda menambahkan file-filenya
+                ProfileMenuItem(
+                    iconId = R.drawable.privacy,
+                    text = "Privacy"
+                )
+                ProfileMenuItem(
+                    iconId = R.drawable.payment,
+                    text = "Riwayat Transaksi"
+                )
+                ProfileMenuItem(
+                    iconId = R.drawable.setting,
+                    text = "Pengaturan"
+                )
+            }
 }
