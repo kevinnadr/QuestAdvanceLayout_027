@@ -70,7 +70,17 @@ fun ProfileScreen(modifier: Modifier) {
 
             Spacer(modifier = Modifier.height(height = 16.dp))
 
+@Composable
+fun SocialIcon(id: Int) {
+    Image(
+        painter = painterResource(id = id),
+        contentDescription = "Social Icon",
+        modifier = Modifier
+            .size(size = 36.dp)
+            .clip(CircleShape)
 
+    )
+}
             Row(
                 horizontalArrangement = Arrangement.spacedBy(space = 16.dp)
             ) {
@@ -105,7 +115,43 @@ fun ProfileScreen(modifier: Modifier) {
             )
 
             Spacer(modifier = Modifier.height(height = 32.dp))
+@Composable
+fun ProfileMenuItem(iconId: Int, text: String) {
+    Card(
+        shape = RoundedCornerShape(size = 20.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = CardBackground
+        ),
+        onClick = { }
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 18.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
 
+            Image(
+                painter = painterResource(id = iconId),
+                contentDescription = text,
+                modifier = Modifier.size(size = 28.dp)
+            )
+            Spacer(modifier = Modifier.width(width = 16.dp))
+            Text(
+                text = text,
+                color = Color.White,
+                fontSize = 16.sp,
+                modifier = Modifier.weight(weight = 1f)
+            )
+
+            Image(
+                painter = painterResource(id = R.drawable.play),
+                contentDescription = "Go",
+                modifier = Modifier.size(size = 24.dp)
+            )
+        }
+    }
+}
 
             Column(
                 verticalArrangement = Arrangement.spacedBy(space = 12.dp),
@@ -168,3 +214,9 @@ fun ProfileScreen(modifier: Modifier) {
         }
     }
 }
+
+
+
+
+
+
