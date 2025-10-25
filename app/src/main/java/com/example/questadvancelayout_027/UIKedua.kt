@@ -67,4 +67,7 @@ fun ProfileScreen(modifier: Modifier) {
                     .clip(CircleShape)
                     .border(width = 2.dp, Color.Gray, CircleShape)
             )
+
+            Spacer(modifier = Modifier.height(height = 16.dp))
+
 }
