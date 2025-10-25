@@ -80,4 +80,14 @@ fun ProfileScreen(modifier: Modifier) {
                 SocialIcon(id = R.drawable.twitter)
                 SocialIcon(id = R.drawable.linkedin)
             }
-}
+
+            Spacer(modifier = Modifier.height(height = 20.dp))
+
+
+            Text(
+                text = stringResource(id = R.string.nama),
+                color = Color.White,
+                fontSize = 26.sp,
+                fontWeight = FontWeight.Bold
+            )
+            }
