@@ -70,4 +70,14 @@ fun ProfileScreen(modifier: Modifier) {
 
             Spacer(modifier = Modifier.height(height = 16.dp))
 
+
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(space = 16.dp)
+            ) {
+
+                SocialIcon(id = R.drawable.facebook)
+                SocialIcon(id = R.drawable.instagram)
+                SocialIcon(id = R.drawable.twitter)
+                SocialIcon(id = R.drawable.linkedin)
+            }
 }
