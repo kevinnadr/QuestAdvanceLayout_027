@@ -139,4 +139,20 @@ fun ProfileScreen(modifier: Modifier) {
                     .fillMaxWidth()
                     .height(height = 50.dp)
                     .padding(horizontal = 24.dp)
-            )
+            ) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+
+                    Image(
+                        painter = painterResource(id = R.drawable.logout),
+                        contentDescription = "Logout",
+                        modifier = Modifier.size(size = 24.dp)
+                    )
+                    Spacer(modifier = Modifier.width(width = 8.dp))
+                    Text(
+                        text = "Logout",
+                        color = Color.White,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+            }
