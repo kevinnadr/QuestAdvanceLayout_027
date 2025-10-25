@@ -95,4 +95,12 @@ fun ProfileScreen(modifier: Modifier) {
                 color = TextGray,
                 fontSize = 16.sp
             )
-           }
+            Spacer(modifier = Modifier.height(height = 16.dp))
+            Text(
+                text = stringResource(id = R.string.bio),
+                color = Color.White,
+                fontSize = 18.sp,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.padding(horizontal = 24.dp)
+            )
+}
