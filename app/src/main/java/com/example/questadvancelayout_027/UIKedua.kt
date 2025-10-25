@@ -54,4 +54,17 @@ fun ProfileScreen(modifier: Modifier) {
                 .padding(vertical = 24.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+
+            Spacer(modifier = Modifier.height(height = 30.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.profile),
+                contentDescription = "Foto Profil",
+                alignment = BiasAlignment(horizontalBias = 0f, verticalBias = 0.2f),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .size(size = 120.dp)
+                    .clip(CircleShape)
+                    .border(width = 2.dp, Color.Gray, CircleShape)
+            )
 }
