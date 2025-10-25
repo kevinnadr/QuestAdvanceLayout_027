@@ -5,4 +5,11 @@
     <string name="prodi">Teknologi informasi</string>
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
     <string name="copy">Copyright, 2025</string>
+    <string name="copyright">Kevin Adrian</string>
+    <string name="username">Kevinnadr</string>
+    <string name="privacy">Privacy</string>
+    <string name="transaksi">Riwayat Transaksi</string>
+    <string name="setting">Pengaturan</string>
+    <string name="logout">Logout</string>
+    <string name="bio">Saya Mahasiswa Teknologi Informasi</string>
 </resources>
