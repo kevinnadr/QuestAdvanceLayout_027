@@ -111,7 +111,7 @@ fun ProfileScreen(modifier: Modifier) {
                 verticalArrangement = Arrangement.spacedBy(space = 12.dp),
                 modifier = Modifier.padding(horizontal = 24.dp)
             ) {
-                // Ini akan error sampai Anda menambahkan file-filenya
+
                 ProfileMenuItem(
                     iconId = R.drawable.privacy,
                     text = "Privacy"
@@ -125,4 +125,6 @@ fun ProfileScreen(modifier: Modifier) {
                     text = "Pengaturan"
                 )
             }
+
+            Spacer(modifier = Modifier.weight(weight = 1f))
 }
